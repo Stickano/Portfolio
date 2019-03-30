@@ -1,0 +1,150 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Open+Sans|Spectral+SC');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+// Font awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+html body {
+    background-color: $sh-white;
+    height          : 100vh;
+    font-weight     : 200;
+    font-family     : 'Nunito', sans-serif;
+    margin          : 0;
+    padding: 0;
+}
+
+.content {
+    height          : 100vh;
+    background-color: $sh-white;
+}
+
+#sideNav {
+    background-color: #282a2e;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight   : 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+    outline-color: #d48a6e;
+}
+
+a .logo {
+    width          : 100%;
+    text-align     : left;
+    text-decoration: none;
+}
+
+.logo {
+    color          : #A54242;
+    font-family    : 'Anonymous Pro', monospace;
+    font-size      : 1.4rem;
+    display        : flex;
+    font-weight    : 200;
+    text-decoration: none;
+    text-align     : left;
+}
+
+.logo-large {
+    font-family: 'Anonymous Pro', monospace;
+    margin-top : 4rem; 
+    width      : 100%;
+}
+
+.brand-items {
+    margin-left : auto;
+    color       : white;
+    margin-right: 3rem;
+}
+
+.brand-items a {
+    color       : white;
+    margin-right: 1rem;
+    font-size   : 1.1rem;
+}
+
+.navbar-special {
+    color       : white;
+    margin-top  : auto;
+    margin-right: auto;
+}
+
+.admin-login-button, .admin-login-button:hover {
+    color: white;
+}
+
+@media (min-width: 992px) {
+    #sideNav {
+        position             : fixed;
+        top                  : 0;
+        left                 : 0;
+        display              : -webkit-box;
+        display              : -ms-flexbox;
+        display              : flex;
+        -webkit-box-orient   : vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
+        width                : 17rem;
+        height               : 100vh;
+    }
+
+    #sideNav .navbar-collapse {
+        display          : -webkit-box;
+        display          : -ms-flexbox;
+        display          : flex;
+        -webkit-box-align: start;
+        -ms-flex-align   : start;
+        align-items      : flex-start;
+        -webkit-box-flex : 0;
+        -ms-flex-positive: 0;
+        flex-grow        : 0;
+        width            : 100%;
+        margin-bottom    : auto;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav {
+        -webkit-box-orient   : vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
+        width                : 100%;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display    : block;
+        margin-left: .5rem;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
+
+    .brand-items {
+        margin: 1.5rem 1rem;
+    }
+
+    .brand-items a {
+        margin-right: .9rem;
+        font-size   : 1.2rem;
+    }
+
+    .content {
+        padding-left: 17rem;
+    }
+}

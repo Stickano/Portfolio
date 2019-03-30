@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+@import 'variables';
+
+#introduction {
+    height             : 100vh;
+    background-color   : black;
+    background-image   : url('/images/front-beauty.jpg');
+    background-position: 50% 20%; 
+    background-repeat  : no-repeat; 
+    background-size    : cover; 
+    display: flex;
+    align-items: flex-end;
+}
+
+.welcome-headline {
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 3rem;
+}
+
+.welcome-intro {
+    font-family: $special;
+    font-size: 1.5rem;
+}
+
+.welcome {
+    margin-left     : auto;
+    margin-bottom   : auto;
+    margin-top      : 35vh;
+    padding         : 1.5rem;
+    text-shadow     : 0px 2px 3px rgba(255,255,255, .4);
+    background-color: rgba(255,255,255, .4);
+    border-radius: .3rem;
+}
+
+span .blink {
+    font-size: 1.5rem;
+    display  : inline-block;
+}
+
+.blink:after {
+    content   : '';
+    width     : 20px;
+    height    : 2px;
+    background: black;
+    opacity   : 0;
+    display   : inline-block;
+    animation : blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+    .welcome {
+        margin-right    : 12vh;
+        background: none;
+        text-shadow     : 0px 2px 3px #FFF;
+
+    }
+}
