@@ -16,6 +16,11 @@ class CreateImagesTable extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->boolean('news')->default(false);
+            $table->boolean('project')->default(false);
+            $table->bigInteger('foreign_id');
+            $table->string('path', 150);
+            $table->text('comment')->nullable();
         });
     }
 

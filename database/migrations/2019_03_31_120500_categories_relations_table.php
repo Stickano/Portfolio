@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CategoriesRelations extends Migration
+class CategoriesRelationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,12 @@ class CategoriesRelations extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('categories_relations', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->timestamps();
+            $table->bigInteger('category_id');
+            $table->bigInteger('project_id');
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class CategoriesRelations extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('categories_relations');
     }
 }

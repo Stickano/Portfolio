@@ -16,6 +16,9 @@ class CreateResumeItemsTable extends Migration
         Schema::create('resume_items', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->string('headline', 150);
+            $table->string('sub_headline', 150);
+            $table->text('comment');
         });
     }
 

@@ -16,6 +16,9 @@ class CreateNewsStoriesTable extends Migration
         Schema::create('news_stories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->boolean('active')->default(false);
+            $table->string('headline', 150);
+            $table->text('story');
         });
     }
 

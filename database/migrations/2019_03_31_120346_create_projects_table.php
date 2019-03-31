@@ -16,6 +16,12 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->boolean('active')->default(false);
+            $table->string('headline', 150);
+            $table->text('project');
+            $table->text('wiki')->nullable();
+            $table->string('github_link', 150)->nullable();
+            $table->string('site_link', 150)->nullable();
         });
     }
 
