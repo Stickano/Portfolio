@@ -22,7 +22,7 @@ html body {
     font-weight     : 200;
     font-family     : 'Nunito', sans-serif;
     margin          : 0;
-    padding: 0;
+    padding         : 0;
 }
 
 .content {
@@ -44,26 +44,14 @@ html body {
     outline-color: #d48a6e;
 }
 
-a .logo {
-    width          : 100%;
-    text-align     : left;
-    text-decoration: none;
-}
-
 .logo {
     color          : #A54242;
-    font-family    : 'Anonymous Pro', monospace;
+    font-family    : $special;
     font-size      : 1.4rem;
     display        : flex;
     font-weight    : 200;
     text-decoration: none;
     text-align     : left;
-}
-
-.logo-large {
-    font-family: 'Anonymous Pro', monospace;
-    margin-top : 4rem; 
-    width      : 100%;
 }
 
 .brand-items {
@@ -86,6 +74,17 @@ a .logo {
 
 .admin-login-button, .admin-login-button:hover {
     color: white;
+}
+
+.copyright {
+    color      : white;
+    font-weight: 300;
+    font-size  : .9rem;
+    margin-top : 2rem;
+}
+
+.row {
+    padding: 5rem 3rem;
 }
 
 @media (min-width: 992px) {
@@ -136,7 +135,7 @@ a .logo {
     }
 
     .brand-items {
-        margin: 1.5rem 1rem;
+        margin: .7rem 1rem;
     }
 
     .brand-items a {
@@ -145,6 +144,20 @@ a .logo {
     }
 
     .content {
-        padding-left: 17rem;
+        padding-left: 18rem;
+    }
+
+    .logo {
+        margin-top : 4rem; 
+        width      : 100%;
+    }
+
+    .copyright {
+        margin-right: auto;
+        margin-top  : 0;
+    }
+
+    .row {
+        padding: 3rem;
     }
 }

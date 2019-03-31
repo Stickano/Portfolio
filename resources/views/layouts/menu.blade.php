@@ -1,18 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
     
     <!-- Jeppesen logo -->
-    <span class="d-lg-none logo">Jeppesen.dev</span>
-    <span class="d-none d-lg-block logo logo-large">Jeppesen.dev</span>
+    <span class="logo">Jeppesen.dev</span>
 
     <!-- Brand icons & login button (small device) -->
     <div class="d-lg-none brand-items">
         <a href="/login" title="Admin login">
             <i class="fas fa-user-shield"></i>
         </a>
-        <a href="" title="My LinkedIn profile">
+        <a href="https://www.linkedin.com/in/hejep" title="My LinkedIn profile" target="_blank">
             <i class="fab fa-linkedin"></i>
         </a>
-        <a href="" title="My GitHub profile">
+        <a href="https://github.com/Stickano" title="My GitHub profile" target="_blank">
             <i class="fab fa-github"></i>
         </a>
     </div>
@@ -34,13 +33,13 @@
             <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
                 <a class="nav-link" title="Back to Home" href="/">Home</a>
             </li>
-            <li class="nav-item {{ Request::is('/news*') ? 'active' : '' }}">
+            <li class="nav-item {{ Request::is('news*') ? 'active' : '' }}">
                 <a class="nav-link" title="Related news" href="/news">News</a>
             </li>
-            <li class="nav-item {{ Request::is('/about*') ? 'active' : '' }}">
+            <li class="nav-item {{ Request::is('about') ? 'active' : '' }}">
                 <a class="nav-link" title="About the author & site" href="/about">About</a>
             </li>
-            <li class="nav-item {{ Request::is('/projects*') ? 'active' : '' }}">
+            <li class="nav-item {{ Request::is('projects*') ? 'active' : '' }}">
                 <a class="nav-link" title="My projects" href="/projects">Portfolio</a>
             </li>
             <li class="nav-item {{ Request::is('/contact') ? 'active' : '' }}">
@@ -48,15 +47,17 @@
             </li>
             <!-- Brand icons -->
             <li class="brand-items d-none d-lg-block">
-                <a href="" title="My LinkedIn profile">
+                <a href="https://www.linkedin.com/in/hejep" title="My LinkedIn profile" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="" title="My GitHub profile">
+                <a href="https://github.com/Stickano" title="My GitHub profile" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
+            <li class="copyright d-lg-none">
+                © All rights reserved, {{ date('Y') }}
+            </li>
         </ul>
-        
     </div>
 
     <!-- Admin login button (big devices) -->
@@ -68,6 +69,10 @@
                 </a>
             </li> 
         </ul>
+    </div>
+
+    <div class="copyright d-none d-lg-block">
+        © All rights reserved, {{ date('Y') }}
     </div>
         
 </nav>

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import 'variables';
+
+.title {
+    font-family   : 'Abel', sans-serif;
+    text-transform: uppercase;
+}
+
+b {
+    font-weight: 800;
+}
+
+.sub-title {
+    margin-top: 3rem;
+}
+
+.technologies {
+    margin-top     : 2rem;
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: flex-start;
+    align-items    : center;
+    align-content  : flex-start;
+    width          : 100%;
+}
+
+.tech-item {
+    width : 5vh;
+    margin: 0 1rem .5rem;
+}
+
+.tech-img {
+    width: auto;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.table td {
+    border-top: 1px solid #555;
+}

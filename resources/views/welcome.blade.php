@@ -6,7 +6,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="row">
+<div class="row" style="padding:0;">
     <div class="col-12" id="introduction">
         
         <div class="welcome">

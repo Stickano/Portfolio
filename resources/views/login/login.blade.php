@@ -1,3 +1,4 @@
+@section('title', 'Admin login')
 @section('css')
     <link rel="stylesheet" href="{{ mix('css/login.css') }}">
 @endsection
