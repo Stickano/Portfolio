@@ -16,5 +16,5 @@ Route::get('/about', 'AboutController@index');
 Route::get('/projects', 'ProjectsController@index');
 Route::get('/news', 'NewsController@index');
 Route::get('/login', 'LoginController@index');
-
+Route::get('/contact', 'ContactController@index');
 

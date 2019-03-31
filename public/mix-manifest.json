@@ -3,5 +3,6 @@
     "/css/app.css": "/css/app.css",
     "/css/login.css": "/css/login.css",
     "/css/welcome.css": "/css/welcome.css",
-    "/css/about.css": "/css/about.css"
+    "/css/about.css": "/css/about.css",
+    "/css/contact.css": "/css/contact.css"
 }

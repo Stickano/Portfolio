@@ -87,7 +87,19 @@ html body {
     padding: 5rem 3rem;
 }
 
+#preloader {
+  background-color: #282a2e;
+  z-index         : 99;
+  width           : 100%;
+  height          : 100%;
+  display         : flex;
+}
+
 @media (min-width: 992px) {
+    #preloader {
+        margin-left: 17vh;
+    }
+
     #sideNav {
         position             : fixed;
         top                  : 0;
@@ -160,4 +172,11 @@ html body {
     .row {
         padding: 3rem;
     }
+}
+
+svg{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display:inline-block;
 }

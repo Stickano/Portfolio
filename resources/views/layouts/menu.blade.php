@@ -42,7 +42,7 @@
             <li class="nav-item {{ Request::is('projects*') ? 'active' : '' }}">
                 <a class="nav-link" title="My projects" href="/projects">Portfolio</a>
             </li>
-            <li class="nav-item {{ Request::is('/contact') ? 'active' : '' }}">
+            <li class="nav-item {{ Request::is('contact') ? 'active' : '' }}">
                 <a class="nav-link" title="Contact me!" href="/contact">Contact</a>
             </li>
             <!-- Brand icons -->

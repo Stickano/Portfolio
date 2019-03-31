@@ -49032,6 +49032,16 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 var app = new Vue({
   el: '#app'
 });
+$(window).on('load', function () {
+  // makes sure the whole site is loaded 
+  $('#status').fadeOut(); // will first fade out the loading animation 
+
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+
+  $('body').delay(350).css({
+    'overflow': 'visible'
+  });
+});
 
 /***/ }),
 
@@ -49184,6 +49194,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/contact.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/contact.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/login.scss":
 /*!***********************************!*\
   !*** ./resources/sass/login.scss ***!
@@ -49207,9 +49228,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/login.scss ./resources/sass/welcome.scss ./resources/sass/about.scss ***!
-  \***************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/login.scss ./resources/sass/welcome.scss ./resources/sass/about.scss ./resources/sass/contact.scss ***!
+  \*********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49217,7 +49238,8 @@ __webpack_require__(/*! /home/stick/www/Portfolio/resources/js/app.js */"./resou
 __webpack_require__(/*! /home/stick/www/Portfolio/resources/sass/app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! /home/stick/www/Portfolio/resources/sass/login.scss */"./resources/sass/login.scss");
 __webpack_require__(/*! /home/stick/www/Portfolio/resources/sass/welcome.scss */"./resources/sass/welcome.scss");
-module.exports = __webpack_require__(/*! /home/stick/www/Portfolio/resources/sass/about.scss */"./resources/sass/about.scss");
+__webpack_require__(/*! /home/stick/www/Portfolio/resources/sass/about.scss */"./resources/sass/about.scss");
+module.exports = __webpack_require__(/*! /home/stick/www/Portfolio/resources/sass/contact.scss */"./resources/sass/contact.scss");
 
 
 /***/ })
